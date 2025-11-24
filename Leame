@@ -1,0 +1,55 @@
+# 📚 Aplicación TCAE SAS Cádiz
+
+Repositorio educativo de **lucompartir-web** para preparar oposiciones y exámenes de TCAE, SAS y Diputación de Cádiz.  
+Todo el contenido está diseñado para ser **simple, accesible y compartible desde el móvil**.
+
+---
+
+## 🧩 Contenido del repositorio
+
+### 📝 Simulacros
+- `simulacros/examen1.md` → Preguntas de práctica con corrección y explicación.
+- `simulacros/examen2.md` → Preguntas sobre higiene, insulinas y prevención.
+
+### 🧠 Flashcards
+- `flashcards/constitucion.md` → Artículos clave de la Constitución Española.
+- `flashcards/higiene.md` → Normas básicas de higiene personal y entorno.
+- `flashcards/sondas.md` → Tipos de sondas y cuidados esenciales.
+- `flashcards/insulinas.md` → Tipos de insulina y pautas de administración.
+- `flashcards/biobancos.md` → Conceptos básicos y normativa de biobancos.
+
+### ✅ Checklists
+- `checklists/constantes_vitales.md` → Pasos para toma de constantes.
+- `checklists/gestion_residuos.md` → Clasificación y eliminación de residuos sanitarios.
+- `checklists/primeros_auxilios.md` → Actuaciones básicas en emergencias.
+
+### ⚙️ Scripts
+- `scripts/instalar.sh` → Mensaje de bienvenida y guía de instalación.
+
+### 📦 APKs
+- `apks/README.md` → Carpeta para versiones instalables de la app.
+
+---
+
+## 🚀 Cómo usar
+
+1. **Descarga el APK** desde la carpeta `apks/`.
+2. **Estudia con flashcards** para reforzar memoria con repetición espaciada.
+3. **Repasa con checklists** antes de prácticas o exámenes.
+4. **Entrena con simulacros** para medir tu nivel y corregir errores.
+5. **Comparte el repositorio** con tu comunidad para que todos puedan aprender.
+
+---
+
+## ✨ Características de la app
+- Simulacros de examen: 50 preguntas en 30 minutos, corrección automática.
+- Banco de preguntas: Constitución, Estatuto, biobancos, residuos, anatomía, constantes vitales.
+- Flashcards: sistema de repetición espaciada.
+- Checklists prácticos: movilización segura, gestión de residuos, toma de constantes.
+- Interfaz moderna: Jetpack Compose + Material Design 3.
+- Modo offline: datos en JSON, sin conexión.
+- APK firmada: lista para instalar en Android.
+
+---
+
+📌 **Objetivo:** Empoderar a la comunidad de estudiantes y profesionales de salud con recursos claros, visuales y accesibles.
