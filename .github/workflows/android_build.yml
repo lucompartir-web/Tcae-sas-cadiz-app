@@ -40,3 +40,4 @@ jobs:
           # >> Asegúrate de que esta ruta se ajusta al nuevo directorio de compilación
           path: Aplicaciones/app/build/outputs/apk/release/app-release-unsigned.apk
 
+
