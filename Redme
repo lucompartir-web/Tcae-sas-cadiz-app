@@ -1,0 +1,20 @@
+# 📚 Aplicación TCAE SAS Cádiz
+
+Bienvenida al repositorio de **lucompartir-web**.  
+Aquí encontrarás recursos educativos para preparar los exámenes de TCAE, SAS y Diputación de Cádiz.
+
+## 🧩 Contenido del repositorio
+- `simulacros/` — Exámenes de práctica con corrección automática.
+- `flashcards/` — Tarjetas de estudio con repetición espaciada.
+- `checklists/` — Guías rápidas para procedimientos clave.
+- `scripts/` — Automatización opcional para instalación.
+- `apks/` — App lista para instalar en Android.
+
+## 🚀 Cómo usar
+1. Descarga el APK desde `apks/`.
+2. Estudia con las flashcards y checklists.
+3. Practica con los simulacros.
+4. Comparte con tu comunidad y mejora el contenido.
+
+---
+✨ Todo está diseñado para ser **simple, accesible y compartible** desde el móvil.
