@@ -55,4 +55,10 @@ Visuales, suaves y listas para repasar:
 - Higiene y prevención → `assets/flashcards/higiene/`
 - Farmacología → próximamente
 - Psicología → próximamente
-- 
+- ## 🧠 Flashcards educativas
+
+Visuales, suaves y listas para repasar:
+
+### Higiene en el entorno del paciente
+
+![Flashcard Higiene](assets/flashcards/higiene/flashcard-higiene.png)
