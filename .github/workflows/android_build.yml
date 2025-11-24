@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - master
-  workflow_dispatch: # Permite ejecutar el workflow manualmente desde GitHub
+  workflow_dispatch:
 
 jobs:
   build:
@@ -20,17 +20,23 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-          cache: 'gradle'
+          
+      - name: Conceder permisos de ejecución a gradlew
+        # >> Aquí se concede permiso a gradlew ANTES de cambiar de carpeta (si está en la raíz)
+        run: chmod +x gradlew 
 
-      - name: Conceder permisos de ejecución a gradle-wrapper
-        run: chmod +x gradlew
-
+      - name: Cambiar a la carpeta del proyecto Android
+        # >> Reemplaza 'Aplicaciones' por el nombre EXACTO de la carpeta que contiene tus archivos.
+        run: cd Aplicaciones 
+        
       - name: Compilar (Build) con Gradle para crear la APK de Release
-        # Reemplaza 'assembleRelease' si usas otro flavor o build type
+        # >> La compilación se ejecuta DENTRO de la carpeta 'Aplicaciones'
         run: ./gradlew assembleRelease
 
       - name: Subir APK como artefacto
         uses: actions/upload-artifact@v4
         with:
           name: app-apk-release
-          path: app/build/outputs/apk/release/app-release-unsigned.apk
+          # >> Asegúrate de que esta ruta se ajusta al nuevo directorio de compilación
+          path: Aplicaciones/app/build/outputs/apk/release/app-release-unsigned.apk
+
