@@ -21,12 +21,9 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
           
-      - name: Conceder permisos de ejecución a gradlew
-        run: chmod +x Aplicaciones/gradlew # Damos permiso al archivo en la subcarpeta
-        
       - name: Compilar (Build) con Gradle para crear la APK de Release
         run: ./gradlew assembleRelease
-        working-directory: Aplicaciones # <--- ¡SOLUCIÓN DE LA RUTA!
+        working-directory: Aplicaciones # <-- Busca en esta carpeta
 
       - name: Subir APK como artefacto
         uses: actions/upload-artifact@v4
