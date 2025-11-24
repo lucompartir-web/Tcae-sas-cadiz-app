@@ -214,3 +214,4 @@ Pulsa sobre el archivo `.apk` para descargarlo directamente en tu dispositivo An
 
 ✅ **Última versión:** `miapp-v1.apk`  
 📌 *Firmada, modo offline, interfaz moderna con Jetpack Compose.*
+
