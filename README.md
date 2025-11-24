@@ -48,3 +48,11 @@ Firmada, modo offline, interfaz moderna con Jetpack Compose
 
 Creado por **lucompartir-web** para apoyar a opositores TCAE en Andalucía.  
 Comparte, adapta y mejora este recurso para tu entorno.
+## 🧠 Flashcards educativas
+
+Visuales, suaves y listas para repasar:
+
+- Higiene y prevención → `assets/flashcards/higiene/`
+- Farmacología → próximamente
+- Psicología → próximamente
+- 
