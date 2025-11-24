@@ -23,10 +23,11 @@ jobs:
           
       - name: Compilar (Build) con Gradle para crear la APK de Release
         run: ./gradlew assembleRelease
-        working-directory: Aplicaciones # <-- Busca en esta carpeta
+        # working-directory: Eliminado para buscar en la raíz del repositorio Tcae-sas-cadiz-app
 
       - name: Subir APK como artefacto
         uses: actions/upload-artifact@v4
         with:
           name: app-apk-release
-          path: Aplicaciones/app/build/outputs/apk/release/app-release-unsigned.apk
+          # Ruta de artefacto ajustada a la raíz:
+          path: app/build/outputs/apk/release/app-release-unsigned.apk
