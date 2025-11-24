@@ -1,0 +1,44 @@
+# 📚 Aplicación TCAE SAS Cádiz
+
+Repositorio educativo de **lucompartir-web** para preparar oposiciones y exámenes de TCAE, SAS y Diputación de Cádiz.  
+Todo el contenido está diseñado para ser **simple, accesible y compartible desde el móvil**.
+
+---
+
+## 🧩 Contenido del repositorio
+
+| 📂 Carpeta        | 📌 Contenido principal                                                                 |
+|-------------------|----------------------------------------------------------------------------------------|
+| 📝 **simulacros/** | Exámenes de práctica con preguntas y corrección automática.                           |
+| 🧠 **flashcards/** | Tarjetas de estudio con repetición espaciada (Constitución, higiene, sondas, insulinas, biobancos). |
+| ✅ **checklists/** | Guías rápidas para procedimientos: constantes vitales, gestión de residuos, primeros auxilios. |
+| ⚙️ **scripts/**    | Automatización opcional para instalación.                                             |
+| 📦 **apks/**       | App lista para instalar en Android.                                                   |
+
+---
+
+## 🚀 Cómo usar
+
+1. 📥 **Descarga el APK** desde la carpeta `apks/`.  
+2. 🧠 **Estudia con flashcards** para reforzar memoria.  
+3. ✅ **Repasa con checklists** antes de prácticas o exámenes.  
+4. 📝 **Entrena con simulacros** para medir tu nivel y corregir errores.  
+5. 📣 **Comparte el repositorio** con tu comunidad.
+
+---
+
+## ✨ Características de la app
+
+| Funcionalidad        | Descripción                                                                 |
+|----------------------|-------------------------------------------------------------------------------|
+| 📝 Simulacros        | 50 preguntas en 30 minutos, corrección automática y resumen de fallos.       |
+| 📚 Banco de preguntas| Constitución, Estatuto, biobancos, residuos, anatomía, constantes vitales.   |
+| 🧠 Flashcards        | Sistema de repetición espaciada para reforzar la memoria.                    |
+| ✅ Checklists        | Movilización segura, gestión de residuos, toma de constantes.                |
+| 🎨 Interfaz moderna  | Construida con Jetpack Compose y Material Design 3.                          |
+| 📴 Modo offline      | Datos en JSON, sin necesidad de conexión.                                    |
+| 📦 APK firmada       | Lista para instalar en cualquier dispositivo Android.                        |
+
+---
+
+📌 **Objetivo:** Empoderar a la comunidad de estudiantes y profesionales de salud con recursos claros, visuales y accesibles.
