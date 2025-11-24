@@ -207,3 +207,10 @@ Todo el contenido está diseñado para ser **simple, accesible y compartible des
 > 💡 *Aprender nunca fue tan accesible y visual* 💡
 > ---------------------------------------------------------
 > 
+# 📦 Carpeta de APKs
+
+Aquí se alojan las versiones instalables de la app educativa.  
+Pulsa sobre el archivo `.apk` para descargarlo directamente en tu dispositivo Android.
+
+✅ **Última versión:** `miapp-v1.apk`  
+📌 *Firmada, modo offline, interfaz moderna con Jetpack Compose.*
