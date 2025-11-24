@@ -22,22 +22,14 @@ jobs:
           java-version: '17'
           
       - name: Conceder permisos de ejecución a gradlew
-        # >> Aquí se concede permiso a gradlew ANTES de cambiar de carpeta (si está en la raíz)
-        run: chmod +x gradlew 
-
-      - name: Cambiar a la carpeta del proyecto Android
-        # >> Reemplaza 'Aplicaciones' por el nombre EXACTO de la carpeta que contiene tus archivos.
-        run: cd Aplicaciones 
+        run: chmod +x Aplicaciones/gradlew # Damos permiso al archivo en la subcarpeta
         
       - name: Compilar (Build) con Gradle para crear la APK de Release
-        # >> La compilación se ejecuta DENTRO de la carpeta 'Aplicaciones'
         run: ./gradlew assembleRelease
+        working-directory: Aplicaciones # <--- ¡SOLUCIÓN DE LA RUTA!
 
       - name: Subir APK como artefacto
         uses: actions/upload-artifact@v4
         with:
           name: app-apk-release
-          # >> Asegúrate de que esta ruta se ajusta al nuevo directorio de compilación
           path: Aplicaciones/app/build/outputs/apk/release/app-release-unsigned.apk
-
-
