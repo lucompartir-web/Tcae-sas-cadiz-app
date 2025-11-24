@@ -1,32 +1,36 @@
-name: Build APK
+name: Android CI Build APK
 
 on:
   push:
     branches:
       - main
+      - master
+  workflow_dispatch: # Permite ejecutar el workflow manualmente desde GitHub
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout del código
-      uses: actions/checkout@v3
+      - name: Checkout del código
+        uses: actions/checkout@v4
 
-    - name: Configurar JDK 17
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: '17'
+      - name: Configurar JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle'
 
-    - name: Conceder permisos de ejecución a gradle-wrapper
-      run: chmod +x ./gradlew
+      - name: Conceder permisos de ejecución a gradle-wrapper
+        run: chmod +x gradlew
 
-    - name: Compilar APK de Release
-      run: ./gradlew assembleRelease
+      - name: Compilar (Build) con Gradle para crear la APK de Release
+        # Reemplaza 'assembleRelease' si usas otro flavor o build type
+        run: ./gradlew assembleRelease
 
-    - name: Subir APK como artefacto
-      uses: actions/upload-artifact@v3
-      with:
-        name: miapp-v1.apk
-        path: app/build/outputs/apk/release/app-release.apk
+      - name: Subir APK como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-apk-release
+          path: app/build/outputs/apk/release/app-release-unsigned.apk
